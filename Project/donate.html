@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width= device-width,inital-scale= 1.0" >
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>  
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+ font-family: 'Poppins', sans-serif;
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+body {
+background: linear-gradient(to top right,#66ffff,#ffff99);
+}
+header{
+position:fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index:99;
+background:linear-gradient(to right,#66ffff,#ffff99);
+}
+.nav{
+ max-width: 1200px;
+ margin: auto;
+ width: 100%;
+ height: 50px;
+ display: flex ;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo{
+ font-size: 1.5rem;
+ font-weight: 600;
+ text-decoration: underline;
+color: rgb(255,0,0);
+}
+
+.navbar{ 
+   
+
+}
+subhead{
+align-items:center;
+justify-content:center;
+font-weight:bold;
+ color:#ffffff;
+font-size:1 rem;
+margin:80px;
+width:100%
+height:100%;
+}        
+p {
+margin: 30px;
+justify-content:center;
+} 
+h3{
+margin:80px;
+color: red;
+}
+h4{
+margin-left:10px;
+color: red;
+}
+cont{
+justify-content:center;
+}
+ .navbar ul {
+      list-style: none;
+       display: flex;
+        align-content: right;
+      
+ }
+    .navbar li{
+          display: inline-block;
+      justify-content: space-between;
+      margin: 10px;
+      padding: 10px;
+       position:relative;
+       align-content:right;     
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+</style>          
+</head>
+<body>
+<header>
+<div  class="nav">
+<a  href="index.html" class="logo">
+ <ion-icon name = "water"></ion-icon><ion-icon name="fitness"></ion-icon>Blood Donor</a>
+ <div class="navbar">
+<ul><li>
+ <ion-icon name="book"></ion-icon><a href="#first">About</a></li>
+<li><ion-icon name="help-outline"></ion-icon><a href="#second">FAQ's</a></li></ul>
+</div>
+</header>
+
+<div id="first"  class="subhead">
+<br><br><h3><center> About</center></h3>
+<h4>Blood Donation:</h4>
+<p>Blood donation is the most important part of the life of a human who is in need for blood.People suffering from chronic health diseases need blood often.People who sufffer in major acccidents also will be in the need of blood.The American Red Cross states that in the United States, someone needs blood every two seconds, and someone needs platelets every thirty seconds. There is not a consistent demand for each blood type. One type of blood being in stock does not guarantee that another type is. Blood banks may have some units in stock but lack others, ultimately causing the patients that need units for specific blood types to have delayed or canceled procedures. Additionally, every year there is an increase of around 5-7% for transfusions without an increase of donors to balance it as well as a growing population of elderly people that will need more transfusions in the future without a predicted increase in donations to reflect those growing numbers. This was supported in 1998 where blood donations to the Red Cross increased to 8%, totaling 500,000 units but hospitals' need for donations increased by 11%.<br>Here are some images of food which help you increase your blood percent and difference between anemic and normal blood.</p>
+<center><img src="image/iron.png" style:"width: auto vw">&nbsp;&nbsp;<img src="image/anemia.png" style:"width: auto vw"></center>
+<center><h3>Role of Health and Hygiene:</h3></center>
+<h4>To maintain good percent of blood:</h4>
+<p>A person with reduced levels of hemoglobin may benefit from eating more iron-rich foods. Iron works to boost the production of hemoglobin, which also helps to form more red blood cells.<br>* Iron-rich foods include:<br>
+meat and fish,soy products, including tofu and edamame,eggs,dried fruits, such as dates and figs,broccoli,green leafy vegetables, such as kale and spinach,green beans,nuts and seeds,peanut butter.<br>* Increasing folate intake:<br>
+Folate is a type of vitamin B that plays an essential part in hemoglobin production. The body uses folate to produce heme, a component of hemoglobin that helps to carry oxygen.
+If a person does not get enough folate their red blood cells will not be able to mature, which could lead to folate-deficiency anemia and low hemoglobin levels.</p>
+<h4>Hygiene measures while blood donation:</h4>
+<p>The risk of transmission of serious infections, including HIV and hepatitis, through unsafe blood and chronic blood shortages brought global attention to the importance of blood safety and availability. With the goal of ensuring universal access to safe blood and blood products, WHO has been at the forefront to improve blood safety and availability.Hence most of the hygiene measures are taken at the blood donation and transfusion process</p>
+</div>
+ <br>
+   <div id="second" class="cont">
+<h3><center>FAQ's</center></h3>
+<button class="accordion">What is Health and Hygiene?</button>
+<div class="panel">
+  <p>According to WHO, World Health Organization, Health is "a state of complete physical, mental, and social well-being  and not merely the absence of disease and infirmity". <br>Hygiene refers to behaviors that can improve cleanliness and lead to good health, such as frequent hand washing, personal hygiene.</p>
+</div>
+
+<button class="accordion">What are the key times to wash hands?</button>
+<div class="panel">
+  <p>Before, during, and after preparing food. Before and after eating food.Before and after using toilets/restrooms. Before and after caring for someone at home who is sick with vomiting or diarrhea. Before and after treating a cut or wound.</p>
+</div>
+
+<button class="accordion">What are the various public health measures?</button>
+<div class="panel">
+  <p> Measures for personal hygiene include:<br> *  Keeping the body clean.<br> *  Consumption of clean drinking water, food, vegetables, fruits, etc. ...<br> *  Proper disposal of waste and excreta.<br> *  Periodic cleaning and disinfection of water reservoirs pools, cesspools and tanks.
+<br> *  Observing standard practices of hygiene in public like social distance.</p>
+</div>
+<center><p>Follow us on:</p></center>
+ <center><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;&nbsp;<ion-icon name="logo-youtube"></ion-icon></center> 
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>  
+
+</body>
+</html>
+                                                                                                                                               
+                                                                                               
+                                                                      
+                                                                                              
+                                                                                       
+                                                                                                         
+                                                                                                         
+                                                                                                           
+                                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
